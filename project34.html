@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="/jquery.js"></script>
+	<title>Document</title>
+	<style>
+		body{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+		.content{
+			position: absolute;
+			background-color: blue;
+			text-align: center;
+			justify-content: center;
+		}
+		button{
+			background-color: red;
+			padding: 12px;
+			margin-top: 160px;
+		}
+	</style>
+</head>
+<body>
+	<div class="content">
+		<h1>Hello</h1>
+	</div>
+	<div>
+		<button id="act1">Right</button>
+		<button id="act2">Left</button>
+
+	</div>
+
+	<script>
+		$(document).ready(function(){
+			$('#act1').on('click', function(){
+				$('.content').animate({
+					left: '+250px', fontSize: '55px', width: '250px' 
+				},1000);
+			})
+			$('#act2').on('click', function(){
+				$('.content').animate({
+					right: '-20px', fontSize: '20px', width: '50px' 
+				},1000);
+			})
+		})
+	</script>
+	
+</body>
+</html>

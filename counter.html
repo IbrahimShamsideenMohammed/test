@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="counter.css">
+</head>
+<body>
+    <div class="box">
+        <div id="main">
+            <p class="main">...</p>
+        </div>
+    
+        <div class="container">
+                <button>Get quote</button>
+        </div>
+    </div>
+    <div class="srch">
+        <button>Search</button>
+         <input type="text" placeholder="Search quote">
+    </div>
+    <script>
+        
+      document.querySelector("button").addEventListener("click", function () {
+        const quote = [
+          "No condition is permanent..",
+          "Think Big..",
+          "When going gets though, only the though gets going..",
+          "No money no friends..",
+          "You are only limited by your imagination..",
+          "The harder you work, the luckier you become..",
+          "Like Attracts Like..",
+          "No man is an Island..",
+          "The hardway, the only way..",
+          "Love is better than wisdom..",
+          "There is no knowledge that is not power..",
+          "Honesty is the best policy..",
+          "There is no shortcut to success..",
+          "More money, more respect..",
+        ];
+        var rand = Math.floor(Math.random()*quote.length);
+        document.querySelector('p').innerHTML = quote[rand];
+        
+      });
+    
+    </script>
+    </div>
+</body>
+</html>

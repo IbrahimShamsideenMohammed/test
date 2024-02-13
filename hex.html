@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random quote generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <button>Get Quote</button>
+      <div class="content">
+        <p>...</p>
+      </div>
+    </div>
+
+    
+    <script>
+      document.querySelector("button").addEventListener("click", function () {
+        const quote = [
+          "No condition is permanent..",
+          "Think Big..",
+          "When going gets though, only the though gets going..",
+          "No money no friends..",
+          "You are only limited by your imagination..",
+          "The harder you work, the luckier you become..",
+          "Like Attracts Like..",
+          "No man is an Island..",
+          "The hardway, the only way..",
+          "Love is better than wisdom..",
+          "There is no knowledge that is not power..",
+          "Honesty is the best policy..",
+          "There is no shortcut to success..",
+          "More money, more respect..",
+        ];
+        var rand = Math.floor(Math.random()*quote.length);
+        document.querySelector('p').innerHTML = quote[rand];
+        if(quote=rand){
+          alert('true');
+        }
+        else{
+          alert('false');
+        }
+      });
+    </script>
+  </body>
+</html>

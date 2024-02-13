@@ -1,0 +1,48 @@
+body{
+    background-image: url( ) "#333" ,"#555";
+    margin-top: 13em;
+    margin-bottom: 16em;
+    padding: 45px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container button{
+    font-size: 18px;
+    padding: 16px;
+    font-weight: 600;
+    border-radius: 4px;
+    border: none;
+    color: #fff;
+    background-color: black;
+}
+.main{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 23px;
+    font-weight: 600;
+    color: goldenrod;
+}
+.srch{
+    margin-top: 20em;
+    margin-left: 20em;
+    display: flex;
+    float: right;
+}
+.srch button{
+    padding: 16px;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    color: #fff;
+    background-color: #333;
+    border-radius: 4px;
+
+}
+.srch input{
+    padding: 16px;
+    font-size: 17px;
+    font-weight: 500;
+    border: none;
+    color: black;
+    border-radius: 4px;
+
+}
